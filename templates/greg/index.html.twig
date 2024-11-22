@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello GregController!{% endblock %}
+
+{% block body %}
+
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }} mon empereur! ✅</h1>
+
+   <h2> Bonjour {{nom}}</h2>
+
+   {% for item in list %}
+
+   <p>{{task.title}}: <br>
+   <p>{{task.description}}</p>
+   <span>{{task.isCompleted ? "tache completée" : "Tache non completée"}}</span>
+    
+   {% endfor %}
+</div>
+{% endblock %}
